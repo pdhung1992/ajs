@@ -1,0 +1,49 @@
+
+<!--in ra dang gia tri-->
+<h2>{{className}}</h2>
+
+<!--dua gia tri cua bien thanh thuoc tinh-->
+<h3 [class]="textColor">Number of student: {{numberOfStudent}}</h3>
+
+<!---->
+<h3 *ngIf="numberOfStudent==0" class="text-warning">No student in class!</h3>
+
+<div class="row">
+  <div class="col-2">
+    <button type="button" (click)="addStudent()" class="btn btn-outline-success">
+    Add student
+    </button>
+  </div>
+  <div class="col-2">
+    <button type="button" (click)="removeStudent()" class="btn btn-outline-danger">
+    Remove student
+    </button>
+  </div>
+</div>
+<hr>
+<h3>Categories</h3>
+<!--su dung vong lap de in cac gia tri cua mang-->
+<h3 *ngFor="let c of categories">{{c}}</h3>
+<hr>
+<div class="card">
+  <div class="card-body">
+    <h2>{{product.name}}</h2>
+    <h2 class="text-info">{{product.price}}</h2>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="card col-4" *ngFor="let a of products">
+    <img src="assets/images/iphone.jpg" alt="">
+    <div class="card-body">
+      <h2>{{a.name}}</h2>
+      <p>{{a.price}}</p>
+      <button class="btn  btn-outline-success" *ngIf="a.qty > 0">Add to cart</button>
+      <h3 class="text-danger" *ngIf="a.qty == 0">Out of stock!</h3>
+    </div>
+  </div>
+</div>
+<hr>
+<img src="https://img.freepik.com/free-photo/coffee-beans-top-view-white-background-space-text_176474-5028.jpg?w=740&t=st=1670946407~exp=1670947007~hmac=7b0bf26b6caa529f3a3f385abf19355b8b728bc1e0a3b76f52b5097e5e20059e" alt="">
+
+
