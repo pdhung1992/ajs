@@ -1,5 +1,5 @@
 
-<!--in ra dang gia tri-->
+in ra dang gia tri
 <h2>{{className}}</h2>
 
 <!--dua gia tri cua bien thanh thuoc tinh-->
@@ -36,14 +36,12 @@
   <div class="card col-4" *ngFor="let a of products">
     <img src="assets/images/iphone.jpg" alt="">
     <div class="card-body">
-      <h2>{{a.name}}</h2>
+      <h2><a routerLink="/product/{{a.id}}">{{a.name}}</a></h2>
       <p>{{a.price}}</p>
-      <button class="btn  btn-outline-success" *ngIf="a.qty > 0">Add to cart</button>
-      <h3 class="text-danger" *ngIf="a.qty == 0">Out of stock!</h3>
+<!--      <button class="btn  btn-outline-success" *ngIf="a.qty > 0">Add to cart</button>-->
+<!--      <h3 class="text-danger" *ngIf="a.qty == 0">Out of stock!</h3>-->
     </div>
   </div>
 </div>
 <hr>
-<img src="https://img.freepik.com/free-photo/coffee-beans-top-view-white-background-space-text_176474-5028.jpg?w=740&t=st=1670946407~exp=1670947007~hmac=7b0bf26b6caa529f3a3f385abf19355b8b728bc1e0a3b76f52b5097e5e20059e" alt="">
-
 

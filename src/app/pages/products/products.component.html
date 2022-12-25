@@ -1,82 +1,13 @@
-<div class="menu_content col-9 row">
-  <div class="col-5">
-    <img class="item-img" src="https://product.hstatic.net/1000075078/product/1669736819_tra-dao-cam-sa-da_fb3645030f6d4354b8eb92380d6c7512.png" alt="xxx">
+<div class="card">
+  <img [src]="product.thumbnail" class="img-fluid" />
+  <div class="card-body">
+    <h1>ID : {{id}}</h1>
+    <h2>{{product.title}}</h2>
+    <p>Price: {{product.price}}</p>
   </div>
-  <div class="col-7">
-    <h4>Trà đào cam sả</h4>
-    <h4 class="item-price">49.000đ</h4>
-    <form method="get" action="#">
-      <h5>Chọn Size (bắt buộc)</h5>
-      <div class="get-item-option item-size">
-        <input type="radio" name="size" value="0" class="btn-check" id="size-s" autocomplete="off" required>
-        <label class="btn btn-outline-warning btn-topping" for="size-s">Nhỏ</label>
-        <input type="radio" name="size" value="5000" class="btn-check" id="size-m" autocomplete="off" required>
-        <label class="btn btn-outline-warning btn-topping" for="size-m">Vừa (+5.000đ)</label>
-        <input type="radio" name="size" value="0" class="btn-check" id="size-l" autocomplete="off" required>
-        <label class="btn btn-outline-warning btn-topping" for="size-l">Lớn (+10.000đ)</label>
-      </div>
-      <h5>Topping (tùy chọn)</h5>
-      <div class="get-item-option item-topping">
-        <input type="checkbox" name="topping" value="10000" class="btn-check" id="tp-kemmac" autocomplete="off">
-        <label class="btn btn-outline-warning btn-topping" for="tp-kemmac">Kem phô mai Macchiato (+10.000đ)</label>
-        <input type="checkbox" name="topping" value="10000" class="btn-check" id="tp-trchau" autocomplete="off">
-        <label class="btn btn-outline-warning btn-topping" for="tp-trchau">Trân châu trắng (+10.000đ)</label>
-        <input type="checkbox" name="topping" value="10000" class="btn-check" id="tp-daomie" autocomplete="off">
-        <label class="btn btn-outline-warning btn-topping" for="tp-daomie">Đào miếng (+10.000đ)</label>
-        <input type="checkbox" name="topping" value="10000" class="btn-check" id="tp-travai" autocomplete="off">
-        <label class="btn btn-outline-warning btn-topping" for="tp-travai">Trái vải (+10.000đ)</label>
-        <input type="checkbox" name="topping" value="10000" class="btn-check" id="tp-hatsen" autocomplete="off">
-        <label class="btn btn-outline-warning btn-topping" for="tp-hatsen">Hạt sen (+10.000đ)</label>
-        <input type="checkbox" name="topping" value="10000" class="btn-check" id="tp-tranha" autocomplete="off">
-        <label class="btn btn-outline-warning btn-topping" for="tp-tranha">Trái nhãn (+10.000đ)</label>
-        <input type="checkbox" name="topping" value="10000" class="btn-check" id="tp-nhadam" autocomplete="off">
-        <label class="btn btn-outline-warning btn-topping" for="tp-nhadam">Nha đam (+10.000đ)</label>
-      </div>
-      <div class="get-item-option item-decision">
-        <button type="reset" class="btn btn-warning">Chọn lại</button>
-        <button type="submit" class="btn btn-warning">Thêm vào giỏ hàng</button>
-      </div>
-    </form>
-  </div>
-  <h5>Mô tả sản phẩm:</h5>
-  <p>Vị thanh ngọt của đào, vị chua dịu của Cam Vàng nguyên vỏ, vị chát của trà đen tươi được ủ mới mỗi 4 tiếng, cùng hương thơm nồng đặc trưng của sả chính là điểm sáng làm nên sức hấp dẫn của thức uống này.</p>
-  <h5>Sản phẩm liên quan:</h5>
-  <div class="item-related row">
-    <div class="col-3">
-      <a href="cat_tea_hongtrasua.html"><div class="card">
-        <img src="https://product.hstatic.net/1000075078/product/hong-tra-sua-tran-chau_326977_a05ac5e1f3214a4aad2ac41ccd2ac68f_large.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text">Hồng trà sữa trân châu</p>
-          <p class="card-text">55.000đ</p>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-3">
-      <a href="cat_tea_hongtralatte.html"><div class="card">
-        <img src="https://product.hstatic.net/1000075078/product/hong-tra-latte_618293_12b6838bc4f349408d4f938a303d285c_large.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text">Hồng trà Latte Macchiato</p>
-          <p class="card-text">55.000đ</p>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-3">
-      <a href="cat_tea_macca.html"><div class="card">
-        <img src="https://product.hstatic.net/1000075078/product/tra-sua-mac-ca_377522_630d73d64fc64f88943babc619416287_large.jpg" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text">Trà sữa Mắc ca trân châu</p>
-          <p class="card-text">55.000đ</p>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-3">
-      <a href="cat_tea_olongnuong.html"><div class="card">
-        <img src="https://product.hstatic.net/1000075078/product/1668574393_tra-sua-oolong-nuong-tran-chau_d895336bdc834091900d51b434003afa_large.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <p class="card-text">Trà sữa Oolong nướng trân châu</p>
-          <p class="card-text">55.000đ</p>
-        </div>
-      </div></a>
-    </div>
+</div>
+<div class="row">
+  <div class="col">
+    <img [src]="product.images">
   </div>
 </div>

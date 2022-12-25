@@ -19,16 +19,19 @@ export class HomeComponent{
   };
   products: any = [
     {
+      id: 1,
       name: 'iPhone 14',
       price: 29000000,
       qty: 10
     },
     {
+      id: 2,
       name: 'iPhone 13',
       price: 25000000,
       qty: 0
     },
     {
+      id: 3,
       name: 'iPhone 12',
       price: 20000000,
       qty: 5
