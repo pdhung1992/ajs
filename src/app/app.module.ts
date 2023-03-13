@@ -15,6 +15,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {SearchComponent} from "./pages/search/search.component";
+import { PracticeExamComponent } from './practice-exam/practice-exam.component';
 
 // 1. khai bao danh sach routing
 const appRoutes: Routes = [
@@ -24,11 +25,12 @@ const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   { path: 'search', component: SearchComponent},
+  {path: 'exam', component: PracticeExamComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent, CategoryComponent, HomeComponent, ProductsComponent, ItemComponent,
-    ClassesComponent, StudentComponent, LoginComponent, SignupComponent, SearchComponent
+    ClassesComponent, StudentComponent, LoginComponent, SignupComponent, SearchComponent, PracticeExamComponent
 
   ],
   imports: [
